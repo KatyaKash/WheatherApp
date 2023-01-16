@@ -9,6 +9,8 @@ namespace WeatherApp
             WeatherData weatherData = new WeatherData();
 
             CurrentConditionDisplay current = new CurrentConditionDisplay(weatherData);
+            StatisticsDisplay stat = new StatisticsDisplay(weatherData);
+
 
             weatherData.setMeasurments(80, 65, 30);
             weatherData.setMeasurments(82, 70, 29);
