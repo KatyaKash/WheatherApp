@@ -6,7 +6,14 @@ namespace WeatherApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WeatherData weatherData = new WeatherData();
+
+            CurrentConditionDisplay current = new CurrentConditionDisplay(weatherData);
+
+            weatherData.setMeasurments(80, 65, 30);
+            weatherData.setMeasurments(82, 70, 29);
+            weatherData.setMeasurments(78, 90, 29);
+
         }
     }
 }

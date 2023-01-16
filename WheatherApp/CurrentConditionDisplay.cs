@@ -21,7 +21,7 @@ namespace WeatherApp
         {
             Console.WriteLine("Текущее состояние: " + temperature + "°C " + humidity + "% влажности");
         }
-        public void update(float temp, float humidity)
+        public void update(float temp, float humidity, float pressure)
         {
             this.temperature = temp;
             this.humidity = humidity;

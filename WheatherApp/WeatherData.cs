@@ -36,13 +36,18 @@ namespace WeatherApp
 
         public void measurmentsChanged()
         {
-
+            notifyObservers();
         }
+
+        public void setMeasurments(float t, float h, float p)
+        {
+            this.temperature = t;
+            this.humidity = h;
+            this.pressure = p;
+            measurmentsChanged();
+        }
+
     }
 
-    public void setMeasurments(float temperature, float humidity, float pressure)
-    {
-
-    }
 
 }
