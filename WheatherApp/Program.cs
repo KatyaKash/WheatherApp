@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WheatherApp
+namespace WeatherApp
 {
     internal class Program
     {
